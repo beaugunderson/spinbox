@@ -1,0 +1,17 @@
+#messages {
+
+}
+
+th#date {
+   min-width: 72px;
+   max-width: 96px;
+}
+
+tr.body {
+   /*display: none;*/
+}
+
+tr.body td {
+   max-height: 10em;
+   overflow-y: auto;
+}

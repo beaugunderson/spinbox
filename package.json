@@ -1,0 +1,51 @@
+{
+  "name": "spinbox",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec",
+    "start": "foreman start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/beaugunderson/spinbox.git"
+  },
+  "keywords": [
+    "imap",
+    "gmail"
+  ],
+  "author": "Beau Gunderson <beau@beaugunderson.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beaugunderson/spinbox/issues"
+  },
+  "browserify": {
+    "transform": [
+      "debowerify",
+      "deglobalify",
+      "deamdify"
+    ]
+  },
+  "dependencies": {
+    "imap": "~0.8.7",
+    "passport": "~0.1.17",
+    "passport-google-oauth": "~0.1.5",
+    "express": "~3.4.4",
+    "xoauth2": "~0.1.8",
+    "oboe": "~1.10.1",
+    "fast-list": "~1.0.2",
+    "swig": "~1.1.0",
+    "connect-ensure-login": "~0.1.1",
+    "moment": "~2.4.0",
+    "mailparser": "~0.3.6",
+    "lodash": "~2.3.0",
+    "unique-random": "~0.1.0",
+    "deglobalify": "~0.2.0",
+    "debowerify": "~0.3.0",
+    "deamdify": "~0.1.1",
+    "juice": "~0.4.0",
+    "async": "~0.2.9",
+    "debug": "~0.7.4"
+  }
+}

@@ -1,0 +1,49 @@
+<html>
+ <head>
+  <title>Spinbox</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/spinbox.css" />
+
+  <link rel="stylesheet" type="text/css"
+   href="/bower/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css"
+   href="/bower/bootstrap/dist/css/bootstrap-theme.min.css" />
+
+  <script src="/bower/jquery/jquery.min.js"></script>
+  <script src="/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="/js/bundle.js"></script>
+ </head>
+
+ <body>
+  <div class="container">
+   <h1>Spinbox</h1>
+
+   <table class="table table-striped table-hover table-condensed">
+    <thead>
+     <tr>
+      <th id="checkbox"></th>
+      <th id="from">From</th>
+      <th id="subject">Subject</th>
+      <th id="date">Date</th>
+     </tr>
+    </thead>
+
+    <tbody id="messages"></tbody>
+   </table>
+  </div>
+
+  <script type="text/html" id="message-row">
+   <tr>
+    <td><intput type="checkbox" /></td>
+    <td><%= from %></td>
+    <td><%= subject %></td>
+    <td><%= date %></td>
+   </tr>
+
+   <tr class="body">
+    <td colspan="4"><%= body %></td>
+   </tr>
+  </script>
+ </body>
+</html>
